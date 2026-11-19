@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎮 Jogo da Forca</h1>
+
+  <!-- Tema visível -->
+  <div id="tema"></div>
+
+  <!-- Canvas do boneco -->
+  <canvas id="forcaCanvas" width="300" height="350"></canvas>
+
+  <!-- Palavra secreta -->
+  <div id="palavra"></div>
+
+  <!-- Teclado virtual -->
+  <div id="teclado"></div>
+
+  <!-- Mensagem final de vitória/derrota -->
+  <div id="feedback"></div>
+
+  <!-- Painel lateral de letras erradas -->
+  <div id="painelErradas">
+    <h3>Letras erradas</h3>
+    <p id="letrasErradas">Nenhuma ainda</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

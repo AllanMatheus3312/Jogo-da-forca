@@ -1,0 +1,96 @@
+/* Fundo degradê 50/50 masculino/feminino */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(90deg, #4facfe 0%, #4facfe 50%, #ff6a88 50%, #ff6a88 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#tema {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+  color: #ffd700; /* dourado para destaque */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+#palavra {
+  font-size: 28px;
+  letter-spacing: 10px;
+  margin: 20px;
+}
+
+#teclado {
+  margin-top: 20px;
+}
+
+#teclado button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#teclado button:hover {
+  background: #4facfe;
+  color: #fff;
+}
+
+#teclado button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Mensagem final centralizada */
+#feedback {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0,0,0,0.8);
+  padding: 25px 50px;
+  border-radius: 12px;
+  display: none;
+}
+
+/* Painel lateral fixo para letras erradas */
+#painelErradas {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  width: 200px;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+}
+
+#painelErradas h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #ffd700;
+}
+
+#letrasErradas {
+  font-size: 16px;
+  word-wrap: break-word;
+}
